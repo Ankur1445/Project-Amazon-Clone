@@ -125,23 +125,31 @@
     background-size: cover;
     background-position: center;
     display:flex;
-    justify-content: center;
-    align-items: flex-end;
-   
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px 0;
+    
 
 }
 .Disclaimer{
-    font-size: 1rem;
-    background-color: white;
+    font-family: "Times New Roman", cursive;
+    font-style: italic;
+    font-size: 1.2rem;
+    background-color:antiquewhite;
     color: black;
     height: 40px;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
     padding: 20px;
     width: 90%;
     border-radius: 5px;
-    margin:25px;
+    position: absolute;
+    top: 55%;
+    
+    
 }
 .hero-msg{
     font-size: 1rem;
@@ -154,7 +162,7 @@
     padding: 20px;
     width: 90%;
     border-radius: 5px;
-    margin:25px;
+
 }
 .hero-msg a{
     color: #007185;
