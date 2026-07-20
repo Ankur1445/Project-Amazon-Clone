@@ -261,7 +261,7 @@ ul a{
 }
 
 /* For Tablet and smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .navbar {
         height: auto;
         min-height: 60px;
@@ -306,16 +306,19 @@ ul a{
     }
 
     .hero-Section {
+        position: relative;
         height: 430px;
         padding: 20px 0;
     }
 
     .Disclaimer {
-        position: static;
+        position: absolute;
+        top: 50%;
         height: auto;
         width: 85%;
-        margin-bottom: 12px;
-        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0px;
     }
 
     .hero-msg {
