@@ -1,5 +1,5 @@
 # Amazon Clone
-
+Live Link: https://project-amazon-clone-lake.vercel.app/
 A simple front-end clone of the Amazon homepage, made using just **HTML and CSS**.
 
 This is one of my first web dev projects — I built it to practice recreating a real website layout from scratch.
