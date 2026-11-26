@@ -1,59 +1,31 @@
 # Amazon Clone
 
-A simple front-end clone of the Amazon homepage, made using just **HTML and CSS**.
+A small Amazon-inspired storefront for learning HTML, CSS, and JavaScript. It is not affiliated with Amazon and is not intended for commercial use.
 
-This is one of my first web dev projects — I built it to practice recreating a real website layout from scratch.
+## Run it
 
-> This is just a learning project. Not affiliated with Amazon and not for commercial use.
+Open `index.html` in a modern browser. No build tools or server are required.
 
----
+## Included
 
-## Preview
+- Homepage category cards that open separate category pages in a new tab
+- Sample products and prices for eight categories
+- Product search, category selection, maximum price, rating, and sort filters
+- A cart saved in browser local storage
+- A demo sign-up/sign-in flow with a browser-only account
+- Product/category imagery stored in `images/`
 
-![preview image-1](image-1.png)
+## Demo account limitation
 
-![preview image-2](image-2.png)
+The account and cart are only stored in this browser. Passwords are hashed in the browser as a demonstration, but this is **not secure authentication** and must not be used for real accounts. A real shop needs a backend or a trusted authentication service.
 
+Product names, prices, and ratings are sample data in `script.js`. The existing category photos are reused for product cards, so unique product photos can be added later for a more realistic catalog.
 
----
+## Project files
 
-## What's included
-
-- Navbar with logo, search bar, sign-in, and cart
-- A hero banner section
-- Category cards (Electronics, Fashion, Furniture, etc.)
-- A footer
-
----
-
-## Built with
-
-- HTML
-- CSS
-- Font Awesome (for icons)
-
----
-
-## How to run it
-
-1. Clone the repo
-   ```bash
-   git clone https://github.com/Ankur1445/Project-Amazon-Clone.git
-   ```
-2. Open `index.html` in your browser
-
-That's it, no setup needed.
-
----
-
-## What I'm still learning / improving
-
-- Making it responsive for mobile
-- Adding real links
-- Using `<img>` tags instead of background-images
-
----
-
-## About
-
-Made by **[Hare Krishan Tripathi]** while learning web development.
+- `index.html` — homepage
+- `script.js` — product data, search/filter behavior, cart, and demo account logic
+- `style.css` — shared styles
+- `search.html` — global product search
+- `clothes.html`, `health.html`, `furniture.html`, `electronics.html`, `beauty.html`, `pets.html`, `toys.html`, `fashion.html` — category listings
+- `images/` — logos, category artwork, hero artwork, and preview screenshots

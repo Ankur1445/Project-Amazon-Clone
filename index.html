@@ -1,197 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon Clone</title>
-    <!-- now we are going to use font awesome icons by using cdn(content data network) file of font awsome available online -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone | Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <!-- Navigation bar -->
-        <div class="navbar">
-            <div class ="nav-logo border">   <!-- here, nav-logo and border are two different classes  -->
-                <div class="logo"></div>
-            </div>
-            <div class = "nav-address border">
-                <p class="line1">Deliver to</p>
-                <div class="address-icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="line2">India</p>
-                </div>
-            </div>
-            <div class="nav-search">
-                <select class="search-select">
-                    <option>all</option>
-                </select>
-                <input class="search-input" type="text" placeholder="Search Amazon">
-                <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-            <div class="nav-signin border">
-                <p class="nav-line1">Hello, sign in</p>
-                <p class="nav-line2">Account & Lists</p>
-            </div>
-            <div class="nav-orders border">
-                <p class="nav-line1">Returns</p>
-                <p class="nav-line2">&Orders</p>
-            </div>
-            <div class="nav-cart border">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p class="nav-line2">Cart</p>
-            </div>
-        </div>
-        <!-- panel below navigation bar -->
-        <div class="panel">
-            <div class="panel-menu">
-                <i class="fa-solid fa-bars"></i>
-                All
-            </div>
-            <div class="panel-ops"> 
-                <p>Today's Deals</p>
-                <p>Customer Service</p>
-                <p>Registry</p>
-                <p>Gift Cards</p>
-                <p>Sell</p>
-            </div>
-            <div class="panel-deals">
-                Shop deals in Electronics, Computers, Smart Home, Books.
-            </div>
-            
-        </div>
-    </header>
-    <div class="hero-Section">
-        <div class="Disclaimer">
-            <p>This is an Amazon clone website and solely made for learning purpose only and it will not be used for any commercial purposes.</p>
-            
-            <p>Made by <b>Hare Krishan Tripathi</b></p>
-        </div>
-        <div class="hero-msg">
-            <p>You are on amazon.com. you can also shop on Amazon India for millions of products with fast loacal delivery.<a> Click here to go to amazon.in</a></p>
-        </div>
+  <header>
+    <div class="navbar">
+      <a class="nav-logo border" href="index.html" aria-label="Amazon Clone home"><div class="logo"></div></a>
+      <div class="nav-address border"><p class="line1">Deliver to</p><div class="address-icon"><i class="fa-solid fa-location-dot"></i><p class="line2">India</p></div></div>
+      <form class="nav-search" action="search.html" method="get">
+        <select class="search-select" name="category" aria-label="Choose a category"><option value="all">All</option><option>Clothes</option><option>Health &amp; Personal Care</option><option>Furniture</option><option>Electronics</option><option>Beauty &amp; MakeUp</option><option>Pets &amp; Animals</option><option>Toys</option><option>Fashion</option></select>
+        <input class="search-input" type="search" name="q" placeholder="Search products" aria-label="Search products">
+        <button class="search-icon" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <button class="nav-signin border account-open"><span class="nav-line1" id="greeting">Hello, sign in</span><span class="nav-line2">Account &amp; Lists</span></button>
+      <a class="nav-orders border" href="index.html#categories"><span class="nav-line1">Returns</span><span class="nav-line2">&amp; Orders</span></a>
+      <button class="nav-cart border cart-open"><i class="fa-solid fa-cart-shopping"></i><span class="nav-line2">Cart <b class="cart-count">0</b></span></button>
     </div>
-    <!-- Shop Section for different categories -->
-    <div class="shop-section">
-        <div class="box">
-            <div class="box-content">
-                <h2>Health & Personal Care</h2>
-                <div class="box-img" style="background-image: url('box2_image.jpg')"></div>
-                <p>Shop Now</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Clothes</h2>
-                <div class="box-img" style="background-image: url('box1_image.jpg')"></div>
-                <p>Shop Now</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Furniture</h2>
-                <div class="box-img" style="background-image: url('box3_image.jpg')"></div>
-                <p>Shop Now</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Electronics</h2>
-                <div class="box-img" style="background-image: url('box4_image.jpg')"></div>
-                <p>Shop Now</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Beauty & MakeUp</h2>
-                <div class="box-img" style="background-image: url('box5_image.jpg')"></div>
-                <p>Shop Now</p>
-            </div>
-        </div>
-        <div class="box6 box">
-            <div class="box-content">
-                <h2>Pets & Animals</h2>
-                <div class="box-img" style="background-image: url('box6_image.jpg')"></div>
-                <p>Shop Now</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>New Arrival in Toys</h2>
-                <div class="box-img" style="background-image: url('box7_image.jpg')"></div>
-                <p>Shop Now</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <h2>Discover Fashion Trends</h2>
-                <div class="box-img" style="background-image: url('box8_image.jpg')"></div>
-                <p>Shop Now</p>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="foot-panel1">
-            Back to Top
-        </div>
-        <div class="foot-panel2">
-            <ul>
-                <p>Get to Know Us</p>
-                <a>Careers</a>
-                <a>Blog</a>
-                <a>About Amazon</a>
-                <a>Investor Relations</a>
-                <a>Amazon Devices</a>
-                <a>Amazon Sciences</a>
-            </ul>
-            <ul>
-                <p>Make Money with Us</p>
-                <a>Sell products on Amazon </a>
-                <a>Sell on Amazon business </a>
-                <a>Sell apps on Amazon</a>
-                <a>Become an Affiliate</a>
-                <a>Advertise Your Products</a>
-                <a>Self Publish with us</a>
-                <a>Host an Amazon Hub</a>
-            </ul>
-            <ul>
-                <p>Amazon Payment Products</p>
-                <a>Amazon Business card</a>
-                <a>Shop with Points</a>
-                <a>reload Your Balance</a>
-                <a>Amazon Currency Converter</a>
-            </ul>
-            <ul>
-                <p>Let Us Help You</p>
-                <a>Amazon and COVID-19</a>
-                <a>your Accounts</a>
-                <a>your Orders</a>
-                <a>Shipping Rates & Policies</a>
-                <a>Returns & Replacements</a>
-                <a>Manage Your Content and Devices</a>
-                <a>Amazon Assistant</a>
-                <a>Help</a>
-            </ul>
-            
-        </div>
-        <div class="foot-panel3">
-            <div class="logo">
-
-            </div>
-        </div>
-        <div class="foot-panel4">
-            <div class="pages">
-                <a>Conditions of Use & Sale</a>
-                <a>Privacy Notice</a>
-                <a>Interest-Based Ads</a>
-            </div>
-            <div class="copyright">
-                &copy; 1996-2026, Amazon.com, Inc. or its affiliates
-            </div>
-        </div>
-    </footer>
-    
+    <nav class="panel"><a class="panel-menu" href="#categories"><i class="fa-solid fa-bars"></i> All</a><div class="panel-ops"><a href="search.html?q=deals" target="_blank" rel="noopener">Today's Deals</a><a href="#footer">Customer Service</a><a href="#categories">Registry</a><a href="#categories">Gift Cards</a><a href="#footer">Sell</a></div><div class="panel-deals">Shop deals in Electronics, Computers, Smart Home, Books.</div></nav>
+  </header>
+  <main>
+    <section class="hero-Section">
+      <div class="Disclaimer"><p>This is an Amazon clone made for learning purposes only.</p><p>Made by <b>Hare Krishan Tripathi</b></p></div>
+      <div class="hero-msg"><p>You are on this Amazon clone. Browse sample products below. <a href="#categories">Start shopping</a></p></div>
+    </section>
+    <section class="shop-section" id="categories" aria-label="Shop by category">
+      <a class="box" href="health.html" target="_blank" rel="noopener"><div class="box-content"><h2>Health &amp; Personal Care</h2><div class="box-img" style="background-image:url('images/box2_image.jpg')"></div><span>Shop Now</span></div></a>
+      <a class="box" href="clothes.html" target="_blank" rel="noopener"><div class="box-content"><h2>Clothes</h2><div class="box-img" style="background-image:url('images/box1_image.jpg')"></div><span>Shop Now</span></div></a>
+      <a class="box" href="furniture.html" target="_blank" rel="noopener"><div class="box-content"><h2>Furniture</h2><div class="box-img" style="background-image:url('images/box3_image.jpg')"></div><span>Shop Now</span></div></a>
+      <a class="box" href="electronics.html" target="_blank" rel="noopener"><div class="box-content"><h2>Electronics</h2><div class="box-img" style="background-image:url('images/box4_image.jpg')"></div><span>Shop Now</span></div></a>
+      <a class="box" href="beauty.html" target="_blank" rel="noopener"><div class="box-content"><h2>Beauty &amp; MakeUp</h2><div class="box-img" style="background-image:url('images/box5_image.jpg')"></div><span>Shop Now</span></div></a>
+      <a class="box" href="pets.html" target="_blank" rel="noopener"><div class="box-content"><h2>Pets &amp; Animals</h2><div class="box-img" style="background-image:url('images/box6_image.jpg')"></div><span>Shop Now</span></div></a>
+      <a class="box" href="toys.html" target="_blank" rel="noopener"><div class="box-content"><h2>New Arrival in Toys</h2><div class="box-img" style="background-image:url('images/box7_image.jpg')"></div><span>Shop Now</span></div></a>
+      <a class="box" href="fashion.html" target="_blank" rel="noopener"><div class="box-content"><h2>Discover Fashion Trends</h2><div class="box-img" style="background-image:url('images/box8_image.jpg')"></div><span>Shop Now</span></div></a>
+    </section>
+  </main>
+  <footer id="footer"><button class="foot-panel1" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to Top</button><div class="foot-panel2"><ul><p>Get to Know Us</p><li>Careers</li><li>Blog</li><li>About Amazon</li><li>Investor Relations</li></ul><ul><p>Make Money with Us</p><li>Sell products on Amazon</li><li>Become an Affiliate</li><li>Advertise Your Products</li></ul><ul><p>Payment Products</p><li>Shop with Points</li><li>Reload Your Balance</li></ul><ul><p>Let Us Help You</p><li>Your Account</li><li>Your Orders</li><li>Shipping &amp; Returns</li><li>Help</li></ul></div><div class="foot-panel3"><div class="logo"></div></div><div class="foot-panel4"><div class="pages">Learning demo · Not affiliated with Amazon</div><div class="copyright">&copy; 2026 Amazon Clone</div></div></footer>
+  <dialog id="account-dialog" class="modal"><button class="modal-close" aria-label="Close">&times;</button><h2>Sign in or create an account</h2><p class="muted">Demo only: your account stays in this browser.</p><form id="account-form"><label>Username<input name="username" required minlength="3" autocomplete="username"></label><label>Password<input name="password" type="password" required minlength="4" autocomplete="current-password"></label><div class="modal-actions"><button class="primary" type="submit" data-auth-mode="signin">Sign in</button><button class="secondary" type="submit" data-auth-mode="signup">Create account</button></div><p id="account-message" class="form-message" aria-live="polite"></p></form></dialog>
+  <dialog id="cart-dialog" class="modal"><button class="modal-close" aria-label="Close">&times;</button><h2>Your cart</h2><div id="cart-items"></div><p id="cart-total" class="cart-total"></p><button id="clear-cart" class="secondary">Clear cart</button></dialog>
 </body>
 </html>
