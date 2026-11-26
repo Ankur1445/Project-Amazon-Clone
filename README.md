@@ -1,31 +1,56 @@
 # Amazon Clone
 
-A small Amazon-inspired storefront for learning HTML, CSS, and JavaScript. It is not affiliated with Amazon and is not intended for commercial use.
+A simple Amazon-inspired website made to practice building a real website layout.
 
-## Run it
+This is a learning project and is not affiliated with Amazon or intended for commercial use.
 
-Open `index.html` in a modern browser. No build tools or server are required.
+---
 
-## Included
+## Preview
 
-- Homepage category cards that open separate category pages in a new tab
-- Sample products and prices for eight categories
-- Product search, category selection, maximum price, rating, and sort filters
-- A cart saved in browser local storage
-- A demo sign-up/sign-in flow with a browser-only account
-- Product/category imagery stored in `images/`
+![preview image-1](images/image-1.png)
 
-## Demo account limitation
+![preview image-2](images/image-2.png)
 
-The account and cart are only stored in this browser. Passwords are hashed in the browser as a demonstration, but this is **not secure authentication** and must not be used for real accounts. A real shop needs a backend or a trusted authentication service.
+---
 
-Product names, prices, and ratings are sample data in `script.js`. The existing category photos are reused for product cards, so unique product photos can be added later for a more realistic catalog.
+## What's included
 
-## Project files
+- Responsive homepage with Amazon-style navigation and a hero banner
+- Category cards that open their own pages in a new tab
+- Sample products and prices for each category
+- Product search, category selection, price and rating filters, and sorting
+- A shopping cart saved in the browser
+- A demo sign-in and sign-up flow
+- All project images stored in the `images` folder
 
-- `index.html` — homepage
-- `script.js` — product data, search/filter behavior, cart, and demo account logic
-- `style.css` — shared styles
-- `search.html` — global product search
-- `clothes.html`, `health.html`, `furniture.html`, `electronics.html`, `beauty.html`, `pets.html`, `toys.html`, `fashion.html` — category listings
-- `images/` — logos, category artwork, hero artwork, and preview screenshots
+The clone now uses JavaScript and has functional front-end features. It does **not have a backend**: products are sample data, and the cart and demo account only work in the current browser. The sign-in flow is for learning only and is not secure authentication for real accounts.
+
+---
+
+## Built with
+
+- HTML
+- CSS
+- JavaScript
+- Font Awesome icons
+
+---
+
+## How to run it
+
+Open `index.html` in a browser. No setup is needed.
+
+---
+
+## What I'm still learning / improving
+
+- Connecting the project to a backend
+- Adding unique images for each sample product
+- Improving the shopping and account experience
+
+---
+
+## About
+
+Made by **[Hare Krishan Tripathi]** while learning web development.
